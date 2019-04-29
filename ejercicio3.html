@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORMULARIO</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<form action="guardar.php" method="post">
+		<table border="1">
+			<thead>
+				<th style="color:white; background: blue;" colspan="2">DATOS PERSONALES</th>
+
+		</thead>
+				 
+		<tbody style="color :black; background: #2efec8;">
+			<tr>
+				<td><label>CEDULA</label></td>
+				<td><input type="text" name="cedula" ></td>
+			</tr>
+			<tr>
+				<td><label>NOMBRE</label></td>
+				<td><input type="text" name="nombre" ></td>
+			</tr>
+			<tr>
+				<td>SEXO</td>
+				<td><input type="radio" name="sexo" value="Masculino">M
+					<input type="radio" name="sexo" value="Femenino">F
+
+				</td>
+			</tr>
+			<tr>
+				
+					<td><label>CIUDAD</label></td>
+					<td><select name="ciudad">
+						<option value="">        </option>
+						<option value="Barranquilla">Barranquilla></option>
+						<option value="Bogota">Bogota></option>
+						<option value="Cali">Cali></option>
+						<option value="Medellin">Medellin></option>
+						<option value="Bogota">Cartagena></option>
+						<option value="Otra">Otra></option>
+						</select>
+
+			
+				</td>
+			</tr>
+			<tr>
+				<td><label>TELEFONO</label></td>
+				<td><input type="text" name="tel" ></td>
+			</tr>
+			<tr>
+				<td><label>DIRECCION</label></td>
+				<td><input type="text" name="dir" ></td>
+
+			</tr>
+			<tr>
+					<td><label>HOBBIES</label></td>
+					<td><input type="checkbox" name="Futbol" value="Futbol">Futbol</td>
+						
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="gym" value="gym">GYM
+				</td>
+					
+				<td>
+				<input type="checkbox" name="Video" value="Video">Videojuegos
+				</td>
+				</tr>
+				
+
+		</tbody>
+				<tfoot>
+					<td colspan="2"><input type="submit" value="GUARDAR DATOS" ></td>
+					
+				</tfoot>
+		</table>
+		<input type="reset" value="Limpiar" >
+</body>
+
+</html>
